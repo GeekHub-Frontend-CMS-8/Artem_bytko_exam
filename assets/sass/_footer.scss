@@ -1,0 +1,48 @@
+.footer{
+  margin-top: 30px;
+  &-mail{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &_link-wrap{
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
+      &_link{
+        color: #1a1a1d;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      &_icon{
+        margin-left: 40px;
+      }
+    }
+
+  }
+  &-links{
+    padding: 50px 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    &_desc{
+      padding: 20px 0;
+      color: #77777e;
+      font-size: 15px;
+      font-weight: 400;
+    }
+  }
+}
+
+@media (min-width: 1350px) {
+  .footer-links-list {
+    flex-flow: row nowrap;
+
+    &_item {
+      padding: 20px;
+    }
+  }
+}

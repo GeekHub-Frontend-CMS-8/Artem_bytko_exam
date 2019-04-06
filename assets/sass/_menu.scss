@@ -1,0 +1,136 @@
+.site-header {
+  padding: 80px 15px 0;
+  max-width: 1800px;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 1000;
+  display: flex;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 800;
+  align-items: center;
+
+}
+
+.menu {
+  text-align: right;
+  display: inline-block;
+  }
+
+
+.menu__icon {
+  display: none;
+  width: 21px;
+  height: 15px;
+  position: absolute;
+  cursor: pointer;
+right: 0;}
+
+.menu__icon {
+  span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #1a1a1d;//burger color
+  border-radius: 9px;
+  opacity: 1;
+  right: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+}
+
+.menu__links {
+  display: flex;
+
+   }
+
+.menu__links {
+  li{
+    display: inline-block;
+  }
+}
+
+.menu__icon span:nth-child(1) {
+  top: 0; }
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+  top: 7px; }
+
+.menu__icon span:nth-child(4) {
+  top: 15px; }
+
+
+
+.menu__links li a {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 20px;
+  text-align: center;
+  color: #1a1a1d;//color-links
+  border-radius: 3px;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+  top: 18px;
+  width: 0;
+  left: 50%; }
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+  transform: rotate(45deg); }
+
+.menu.menu_state_open .menu__icon span:nth-child(3) {
+  transform: rotate(-45deg); }
+
+.menu.menu_state_open .menu__icon span:nth-child(4) {
+  top: 18px;
+  width: 0;
+  left: 50%; }
+
+.menu.menu_state_open li {
+  display: inline-block; }
+
+.menu.menu_state_open li a {
+  padding: 0 15px; }
+
+@media only screen and (max-width: 945px) {
+  .menu__icon {
+    display: inline-block;
+    position: absolute;
+    top: 78px;
+    left: 15px; }
+  .menu__links {
+    display: none;
+  }
+
+  .menu__links li {
+    line-height: 30px;
+  }
+
+  .menu_state_open .menu__links {
+    padding: 50px 0 0 30px;
+display: flex;
+    flex-flow: column;
+    text-align: left;
+    }
+
+  .menu_state_open .menu__links li{
+padding: 15px;
+    background-color: #fff;
+  }
+
+  .menu_state_open .menu__links .links-block {
+  }
+}
+
+.custom-logo{
+  position: absolute;
+  top: 70px;
+  left: calc((100% - 225px)/2);
+
+}
